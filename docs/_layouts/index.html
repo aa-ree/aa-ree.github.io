@@ -1,0 +1,52 @@
+---
+layout: default
+---
+
+<div class="home">
+
+  <!-- <h1 class="page-heading">Posts</h1>
+
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
+ -->
+  <div class='row'>
+    <div class='sqrt'></div>
+  </div>
+  <div class='row'>
+    <div class='sqrt'>
+      <div class='theme'><div class='text'><a href='/about'>About</a></div></div>
+    </div>
+    <div class='sqrt'>
+      <div class='theme'><div class='text'><a href='/projects'>Projects</a></div></div>
+    </div>
+  </div>
+  <div class='row'>
+    <div class='sqrt'>
+      <!-- <div class='theme'><div class='text'>Blog</div> -->
+      </div>
+    </div>
+  </div>
+
+  <svg class="clip-svg">
+      <defs>
+        <clipPath id="clipPoly" clipPathUnits="objectBoundingBox">
+            <polygon points="0.5 0, 1 0.5, 0.5 1, 0 0.5" />
+        </clipPath>
+      </defs>  
+  </svg>
+
+</div>
+<style>
+  .sqrt{
+    clip-path: url(#clipPoly);
+  }
+</style>

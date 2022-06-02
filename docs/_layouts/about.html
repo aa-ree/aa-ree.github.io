@@ -1,0 +1,44 @@
+---
+layout: default
+---
+<article class="about">
+
+  <header class="about__header">
+    <div class="about__icons">
+      <div class="icons">
+    	  <div class="base"></div>
+    	  <div class="hair"></div>
+    	  <div class="sense"></div>
+      </div>
+    </div>
+    
+    <h1 class="about-title">{{ page.title }}</h1>
+  </header>
+
+  <div class="about__content">
+    {{ content }}
+  </div>
+
+</article>
+<svg class="clip-svg">
+      <defs>
+        <clipPath id="clipBefore" clipPathUnits="objectBoundingBox">
+            <polygon points="0 0, 0 0.5, 1 0" />
+        </clipPath>
+      </defs>  
+  </svg>
+  <svg class="clip-svg">
+      <defs>
+        <clipPath id="clipAfter" clipPathUnits="objectBoundingBox">
+            <polygon points="0 0, 0.8 1, 0.8 0" />
+        </clipPath>
+      </defs>  
+  </svg>
+  <style>
+    .hair:before{
+      clip-path: url(#clipBefore);
+    }
+    .hair:after{
+      clip-path: url(#clipAfter);
+    }
+  </style>

@@ -1,0 +1,16 @@
+---
+layout: projects
+---
+<div class="projects">
+    <h2>{{ page.title }}</h2>
+    
+    <section>
+    {% for img in page.image_path %}
+    	<div class="works">
+    		<img src='{{img}}'/>
+    	</div>
+    {% endfor %}	
+    </section>
+	
+    {{ content }}
+</div>
