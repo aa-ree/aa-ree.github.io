@@ -1,5 +1,4 @@
 ---
-layout: project
 title: MEDBIRDIE
 image_path: ['../images/project/eGS-many.png',
 			'../images/project/eGS.png',

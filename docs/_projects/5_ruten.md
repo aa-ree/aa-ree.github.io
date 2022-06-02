@@ -1,5 +1,4 @@
 ---
-layout: project
 title: RUTEN
 image_path: ['../images/project/ruten-desktop.png', 
   '../images/project/ruten-desktop-goods.png']

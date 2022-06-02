@@ -1,5 +1,4 @@
 ---
-layout: project
 title: EYES MEDIA
 image_path: ['../images/project/eyes-demo-push.png',
 			'../images/project/eyes-demo-video.png',

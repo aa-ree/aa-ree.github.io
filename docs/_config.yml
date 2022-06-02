@@ -30,8 +30,8 @@ github_username:  aa-ree
 # theme: minima
 plugins:
   - jekyll-feed
-# collections:
-#   - projects
+collections:
+  - projects
 # conllection:
 #   projects:
 #     output: true

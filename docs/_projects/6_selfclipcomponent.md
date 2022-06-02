@@ -1,5 +1,4 @@
 ---
-layout: project
 title: SELF-CLIP COMPONENT
 image_path: ['../images/project/native-web-component.png']
 ---

@@ -1,5 +1,4 @@
 ---
-layout: project
 title: CLIPPER
 image_path: ['../images/project/website-trailer.png',
 			'../images/project/wesite-trailer-content.png',
