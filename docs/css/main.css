@@ -332,7 +332,12 @@ h2{
     justify-content: center;
     justify-items: center;
 }
-
+.projects__work--img img:empty {
+    width: 90%;
+    height: 100%;
+    line-height: 1.35;
+    background: #ccc;
+}
 /* .projects .works {
     max-width: 687px;
     max-height: 490px;
@@ -386,15 +391,16 @@ h2{
     float: right;
     width: 30%;
 }
-.right h2:empty, .right div:empty{
+.projects__side--desc h2:empty,
+.projects__side--desc div:empty{
     height: 35px;
     line-height: 1.35;
     background: #ccc;
 }
-.right h2:empty{
+.projects__side--desc h2:empty{
     width: 40%;
 }
-.right div:empty{
+.projects__side--desc div:empty{
     width: 90%;
     box-shadow: 0 50px #E2E2E2, 0 100px #EFEFEF;
 }
