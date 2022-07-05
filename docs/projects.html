@@ -2,7 +2,9 @@
 layout: default
 ---
 {% for project in site.projects %}
+{% assign template = forloop.index | modulo: 2 %}
 <div class="projects">
+    {% if template != 0 %}
     <section class="projects__side projects__side--img">
         {% if project.image_path %}
         <div class="projects__work">
@@ -25,8 +27,35 @@ layout: default
         {% endif %}
     </section>
     <section class="projects__side projects__side--desc">
-        <h2 data-title="{{ project.title }}"></h2>
-        <div data-content="{{ project.content }}"></div>
+        <h2 class="projects__side--title" data-title="{{ project.title }}"></h2>
+        <div class="projects__side--content" data-content="{{ project.content }}"></div>
     </section>
+    {% else %}
+    <section class="projects__side projects__side--desc">
+        <h2 class="projects__side--title" data-title="{{ project.title }}"></h2>
+        <div class="projects__side--content" data-content="{{ project.content }}"></div>
+    </section>
+    <section class="projects__side projects__side--img">
+        {% if project.image_path %}
+        <div class="projects__work">
+            <div class="projects__work--img">
+                {% for img in project.image_path %}
+                <img data-src='{{img}}' />
+                {% endfor %}
+            </div>
+        </div>
+        {% endif %}
+    
+        {% if project.mobile %}
+        <div class="projects__work">
+            <div class="projects__work--img">
+                {% for img in project.mobile %}
+                <img data-src='{{img}}' />
+                {% endfor %}
+            </div>
+        </div>
+        {% endif %}
+    </section>
+    {% endif %}
   </div>
 {% endfor %}
